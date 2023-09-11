@@ -1,0 +1,140 @@
+/* This version of the site is only for sites under 768px.*/
+@media (max-width: 768px) {
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 769px;
+    /*
+   Um, the image needs to not stop so far off the side, but I am leaving this to be fixed later as I will probably use vectors so that would be a non-problem.
+
+   Also, I will have to do the same for the profile image, but blue background, different blue frame. The owner wants the image to be cut-out around him, then vectored so you can see under. 
+
+
+   width: 600px;  needs to be smaller for vertical mobile phones*/
+    background-image: url("/assets/bg/david_pokadots_2.png");
+    /* Probably needs resizing to look better */
+    background-repeat: repeat;
+    background-position: 12vw;
+    background-size: contain;
+    background-color: #f6ecc6;
+  }
+  #nav_img {
+    width: 20px;
+  }
+  .fs-4 {
+    font-size: calc(1.0rem + .2vw) !important;
+  }
+  li {
+    min-width: 120px;
+  }
+  i {
+    padding-right: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* This version of the site is only for sites under 768px. See /d/ versions of site */
+}
+
+.sidebar-spacer {
+  width: 200px;
+}
+
+.sidebar-sm-spacer {
+  width: 20px;
+}
+
+a i {
+  color: #ff640c;
+}
+
+a #text {
+  font-weight: bold;
+}
+
+.photocard {
+  color: white;
+  background-color: #83cbcc;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px 0px lightcyan;
+  -moz-box-shadow: inset 0px 0px 5px 0px lightcyan;
+  -webkit-box-shadow: inset 0px 0px 5px 0px lightcyan;
+}
+
+.photocard p {
+  font-weight: bolder;
+}
+
+#nav_img {
+  border-radius: 50%;
+  width: 80px;
+}
+
+#info_img_circle img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.nav-button {
+  border: 1px solid #83cbcc;
+  background-color: #83cbcc;
+  opacity: 0.8;
+  padding-left: 13px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  color: #ff640c;
+  background-color: #83cbcc;
+  opacity: 1;
+  -webkit-box-shadow: inset 0px 0px 15px 0px #83cbcc;
+          box-shadow: inset 0px 0px 15px 0px #83cbcc;
+}
+
+.disable-hover {
+  pointer-events: none;
+}
+
+/* Showing which item in accessibility menu is selected. ... with li tag, class="cm-active" */
+.cm-active {
+  background-color: #f9b58e;
+  color: white;
+}
+
+.cm-active i {
+  color: #025e5f;
+}
+
+.cm-active a {
+  color: black;
+}
+
+/* Accessibility highlight, but the hover only 
+.am-menu-items:hover {
+ background-color: pink;
+}
+*/
+.disable-highlight {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+li {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=mobile_sidebar_footer.css.map */

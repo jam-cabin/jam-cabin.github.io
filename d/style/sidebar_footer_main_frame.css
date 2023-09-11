@@ -1,0 +1,59 @@
+.sidebar {
+  /* This was taken from MRDADOU/style/style2.scss */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 17vw;
+  height: auto;
+  z-index: 100;
+  background-image: url("/assets/bg/david_pokadots_2.png");
+  background-size: 115px;
+  /* Should I make a hor and a vert version of pokadots ? 
+ background-size: cover;
+ background-color: $orange;*/
+}
+
+.sidebarsidebar::after, .sidebarsidebar::before {
+  height: auto;
+}
+
+.sidebar.sidebar::after {
+  width: 16vw;
+}
+
+#nav_img {
+  border-radius: 50%;
+  width: 130px;
+  background-image: url("/assets/logos/david_logo_fancy_sepia_blank_1.png");
+  scale: 160%;
+  margin-top: 40px;
+}
+
+.nav-link {
+  font-family: 'Blokletters Balpen';
+  font-weight: 700;
+}
+
+a p {
+  color: #025e5f;
+  position: absolute;
+  top: 273px;
+  margin-top: 0px;
+  margin-bottom: -1px;
+}
+
+.tabs_box, .tab_box {
+  margin: 25px;
+  /*
+ background-color: green; 
+ */
+}
+
+/* Accessibility highlight, but the hover only */
+.am-menu-items:hover {
+  background-color: pink;
+}
+/*# sourceMappingURL=sidebar_footer_main_frame.css.map */

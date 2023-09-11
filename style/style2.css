@@ -1,0 +1,218 @@
+body {
+  background-color: #f6ecc6;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16vw;
+  height: 98vh;
+  z-index: 100;
+  background-image: url("/assets/temp/pokadots.png");
+  background-size: cover;
+  background-color: #ff640c;
+  /*
+ &ul {
+  width: 200px;
+  background-color: greenyellow;
+ }
+ */
+}
+
+.sidebar > * {
+  z-index: 100;
+}
+
+.sidebar::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15vw;
+  height: 101vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fb965c), to(#faf3a7));
+  background-image: linear-gradient(180deg, #fb965c, #faf3a7);
+  opacity: .7;
+  -webkit-box-shadow: 14px -16px 25px #f9b58e;
+          box-shadow: 14px -16px 25px #f9b58e;
+}
+
+@media (max-width: 768px) {
+  * {
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  /*
+ .sidebar {
+
+  &ul {
+   width: 100px;
+  }
+ }
+ */
+  .sidebar {
+    width: 25vw;
+    background-image: url("/assets/temp/pokadots.png");
+  }
+  .sidebar::after {
+    width: 24vw;
+    height: 101vh;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fb965c), to(#faf3a7));
+    background-image: linear-gradient(360deg, #fb965c, #faf3a7);
+    opacity: .7;
+    -webkit-box-shadow: 14px -16px 25px #f9b58e;
+            box-shadow: 14px -16px 25px #f9b58e;
+  }
+}
+
+@media (min-height: 650px) {
+  .sidebar .photocard p, .sidebar a {
+    font-size: x-large;
+  }
+}
+
+@media (max-height: 650px) {
+  .sidebar {
+    width: 19vw;
+  }
+  .sidebar::after {
+    width: 19vw;
+    height: 101vh;
+  }
+}
+
+a i {
+  color: #ff640c;
+}
+
+a p {
+  color: greenyellow;
+  margin-top: 4px;
+  margin-bottom: -1px;
+}
+
+.photocard {
+  color: white;
+  background-color: #04909377;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px 0px #83cbcc;
+  -moz-box-shadow: inset 0px 0px 5px 0px #83cbcc;
+  -webkit-box-shadow: inset 0px 0px 5px 0px #83cbcc;
+}
+
+.photocard p {
+  font-weight: bolder;
+}
+
+#nav_img {
+  border-radius: 50%;
+  width: 130px;
+}
+
+#info_img_circle img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.sidebar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+li:hover {
+  background: #83cbcc;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #04909377), color-stop(33%, #83cbcc));
+  background: linear-gradient(180deg, #04909377 15%, #83cbcc 33%);
+}
+
+.cm-active {
+  background-color: #f9b58e;
+  color: white;
+}
+
+.cm-active i {
+  color: #025e5f;
+}
+
+.cm-active a {
+  color: black;
+}
+
+.cm-active.cm-active:hover {
+  background-color: #83cbcc !important;
+}
+
+.disable-hover {
+  pointer-events: none;
+}
+
+/* Accessibility highlight, but the hover only */
+.am-menu-items:hover, .cm-active:hover {
+  background-color: #83cbcc;
+}
+
+@font-face {
+  font-family: "Smokum Regular";
+  src: url("/assets/smokum/Smokum-Regular.ttf");
+}
+
+.smokum {
+  font-family: 'Smokum';
+  font-weight: 600;
+  font-size: larger;
+  font-stretch: ultra-expanded;
+}
+
+@font-face {
+  font-family: "Reey Regular";
+  src: url("/assets/smokum/Reey-Regular.otf");
+  font-weight: 100;
+}
+
+.signed {
+  font-family: 'Reey Regular';
+}
+
+@font-face {
+  font-family: 'JINKY';
+  src: url("/assets/smokum/JINKY.ttf");
+}
+
+.written {
+  font-family: 'Blokletters Viltstift';
+}
+
+@font-face {
+  font-family: 'Blokletters Balpen';
+  src: url("/assets/smokum/Blokletters-Balpen.ttf");
+}
+
+@font-face {
+  font-family: 'Blokletters Potlood';
+  src: url("/assets/smokum/Blokletters-Potlood.ttf");
+}
+
+@font-face {
+  font-family: 'Blokletters Viltstift';
+  src: url("/assets/smokum/Blokletters-Viltstift.ttf");
+}
+
+.disable-highlight {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*# sourceMappingURL=style2.css.map */
