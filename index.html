@@ -16,10 +16,31 @@
  <link rel="stylesheet" href="/style/style2.css">
 </head>
 <body>
- <div class="row">
+ <div class="row" style="height: 60vh; width: 100vw; display: flex; justify-content: center;">
+
+  <style>
+   a {
+    display: flex; justify-content: center;
+   }
+  </style>
+
+Page will redirect in 3 seconds. If it does not, please select which type of device you are using:
+<a href="https://jam-cabin.github.io/m/tabs.html"><i class="fas fa-mobile-alt"></i>&nbsp;Mobile phone or &nbsp;<i class="fas fa-tablet-alt"></i>tablet in vertical (tall) mode</a>
+<a href="https://jam-cabin.github.io/d/tabs.html"><i class="fas fa-desktop"></i>&nbsp; Desktop or<i class="fas fa-tablet-alt fa-rotate-90"></i> &nbsp;tablet in horizontal (wide) mode</a>
 
 
+ </div>
 
+<!--
+ <script type="text/javascript">
+  if (screen.width <= 699) { //mobile  version
+    document.location = "https://jam-cabin.github.io/m/tabs.html";
+  if (screen.width >= 699) { // desktop version
+    document.location = "https://jam-cabin.github.io/d/tabs.html";
+  }
+  }
+</script>
+-->
  
 
 
@@ -27,97 +48,6 @@
 
 
 
-
-
-
- <!-- The sidebar -->
-
-  <div class="col-xs-6 col-md-2 col-lg-3 d-flex flex-column flex-shrink-0 p-3 bg-light sidebar disable-highlight">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      
-      <span class="fs-4">Mr D4d0u</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item disable-hover photocard">
-        <a href="#" class="nav-link" aria-current="page">
-          <img src="/assets/temp/logo_flat.png" id="nav_img" alt="">
-          <p>Hey, I'm David D</p>
-          
-        
-        </a>
-      </li>
-      <li>
-        <a href="/tabs.html" class="nav-link link-dark">
-         <i class="fa-solid fa-guitar fontAwes"></i>
-         <!--  <i class="fa-solid fa-music"></i> <i class="fa-solid fa-circle-dot"></i>  -->
-         Tabs List
-        </a>
-      </li>
-      
-      <li>
-        <a href="https://space.bilibili.com/2045047052?spm_id_from=333.337.0.0" class="nav-link link-dark">
-          <i class="fa-brands fa-bilibili fontAwes"></i>  BiliBili
-          
-        </a>
-      </li>
-      <li>
-       <a href="https://youtube.com/@MrD4d0u" class="nav-link link-dark">
-         <i class="fa-brands fa-youtube fontAwes"></i> Youtube 
-       </a>
-     </li>
-      <li class="disable-hover">
-       <style>
-        .hover-link { 
-         pointer-events: auto;
-         color: #b94909;
-         text-decoration: none;
-        }
-
-       </style>
-       <div  style="height: 30vh;"> 
-        <!--
-       If viewing from a small screen, click
-       <a href="bing.com" class="hover-link">to switch to small screen site</a>-->
-       </div>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-        
-        <strong><i class="fa-solid fa-universal-access"></i> </strong> Accessibility
-      </a>
-      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-        <li class="cm-active"><a class="dropdown-item" href="#"><i class="fas fa-eye"></i> Default Colours</a></li>
-        <li><a class="dropdown-item" href="#"><i class="fas fa-low-vision"></i>  Deuteranmalia</a></li>
-        <li><a class="dropdown-item" href="#"><i class="fas fa-low-vision"></i>  Protanopia</a></li>
-        <li><a class="dropdown-item" href="#"><i class="fas fa-low-vision"></i> Tritanopia</a></li>
-        <li><a class="dropdown-item" href="#"><i class="fas fa-low-vision"></i>  Monochromacy</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="/m/tabs.html"><i class="fas fa-mobile-alt"></i> Mobile site</a></li>
-        <!-- <i class="fas fa-desktop"></i> Desktop site with /tabs.html -->
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
-  </div>
-
-
-
-<!--  the main of the page -->
-  <main id="tabs_box" class="col-xs-6 col-md-10 col-lg-9">
-   <div id="tabs_disclosure"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum impedit dolores deserunt iure odit fugiat esse accusamus velit sequi, quisquam totam dolorum sapiente. Hic atque tenetur quo! Laudantium, eius in?</div>
-   <div -d="tabs_list"> list </div>
-   </main>
-
-
-
-
-  </div>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      <script src="sidebars.js"></script>
   </body>
 
 
