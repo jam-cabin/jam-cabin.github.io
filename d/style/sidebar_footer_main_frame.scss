@@ -24,7 +24,12 @@
   width: 16vw;
 }}
 
-/* Mr D4d0u ( class .fs-4 ) is edited in the style2.scss file. The font is set by the .smokum class tag */
+/* Mr D4d0u ( class .fs-4 ) is edited in the style2.scss file. The font is set by the .smokum class tag within that stylesheet*/
+
+.smokum {
+ margin-top: 19px;
+ margin-left: 5px;
+}
 
 #nav_img {
  border-radius: 50%;
