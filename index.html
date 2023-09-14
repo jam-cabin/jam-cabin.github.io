@@ -16,17 +16,64 @@
  <link rel="stylesheet" href="/style/style2.css">
 </head>
 <body>
- <div class="row" style="height: 60vh; width: 100vw; display: flex; justify-content: center;">
 
-  <style>
-   a {
-    display: flex; justify-content: center;
+
+ <style>
+  
+   body {
+    background-image: url("assets/bg/david_pokadots_2.png");
    }
+
+   .body-a {
+    display: flex; justify-content: center;
+    background-color: rgba(0, 255, 255, 0.315);
+    height: 3em;
+    width: 850px;
+    align-items: center;
+
+    /* Just making the hyperlink less ugly */
+    color: #ff640c;
+    text-decoration: none;
+   }
+
+   .body-a:hover {
+    color: #83cbcc;
+    background-color: blueviolet;
+    font-size: xx-large;
+   }
+
+   p {
+    display: flex;
+    justify-content: center;
+    background-color: #049093cc;
+    color: #faf3a7;
+    height: 2rem;
+   }
+
+   .teiResa {
+    background-color: rgba(0, 255, 255, 0.315);
+
+    /* Just making the hyperlink less ugly */
+    color: rgb(134, 92, 161);
+    text-decoration: none;
+   }
+
+   .teiResa:hover {
+    color: #83cbcc;
+    background-color: rgb(134, 92, 161);
+   }
+   
+
   </style>
 
-Page will redirect in 3 seconds. If it does not, please select which type of device you are using:
-<a href="https://jam-cabin.github.io/m/tabs.html"><i class="fas fa-mobile-alt"></i>&nbsp;Mobile phone or &nbsp;<i class="fas fa-tablet-alt"></i>tablet in vertical (tall) mode</a>
-<a href="https://jam-cabin.github.io/d/tabs.html"><i class="fas fa-desktop"></i>&nbsp; Desktop or<i class="fas fa-tablet-alt fa-rotate-90"></i> &nbsp;tablet in horizontal (wide) mode</a>
+
+ <div class="row main" style="height: 90vh; width: 100vw; display: flex; flex-direction: column; align-content: center; justify-content: center; align-items: center; ">
+
+ 
+
+<p>Page will redirect in 3 seconds. If it does not, please select which type of device you are using:</p>
+<a class="body-a" href="https://jam-cabin.github.io/m/tabs.html"><i class="fas fa-mobile-alt"></i>&nbsp;Mobile phone or &nbsp;<i class="fas fa-tablet-alt"></i>&nbsp;tablet in vertical (tall) mode</a>
+<a class="body-a" href="https://jam-cabin.github.io/d/tabs.html"><i class="fas fa-desktop"></i>&nbsp; Desktop or&nbsp;<i class="fas fa-tablet-alt fa-rotate-90"></i> &nbsp;tablet in horizontal (wide) mode</a>
 
 
  </div>
@@ -67,7 +114,7 @@ Page will redirect in 3 seconds. If it does not, please select which type of dev
 
  <footer class="footer mt-auto py-3 bg-light">
   <div class="container">
-    <span class="text-muted">Place sticky footer content here. I move down as I get pushed down.</span>
+    <span class="text-muted">Website, graphics, and design by <a class="teiResa" href="https://github.com/teiResa">Theresa</a></span>
   </div>
 </footer>
 </body>
