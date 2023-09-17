@@ -15,7 +15,12 @@ $yellowDark: #ccbf90;
 $fontWhite: white;
 
 .both_sides{
- background-image: url("https://jam-cabin.github.io/assets/bg/david_stage_0740.png");
+ background-image: url("https://jam-cabin.github.io/assets/bg/david_stage_0740md.png");
+
+ //"https://jam-cabin.github.io/assets/bg/david_stage_0740.png"
+ /*
+ Have it swap png's based on screen sizes and whether or not a mobile.
+ */
  
  //"/assets/david_c_lines.png"
  // make image rectangular so it sits next to the contact_box info, not under it. Prob need a min-width and min-width with the value with like vw/vh.
