@@ -71,7 +71,21 @@ a p {
 
 @media (min-width: 769px) and (max-width: 916px) {
   .sidebar {
-    width: 23vw;
+    width: 20vw;
+  }
+  .sidebar::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19vw;
+    height: 132vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fb965c), to(#faf3a7));
+    background-image: linear-gradient(180deg, #fb965c, #faf3a7);
+    opacity: .7;
+    -webkit-box-shadow: 14px -16px 25px #f9b58e;
+            box-shadow: 14px -16px 25px #f9b58e;
   }
 }
 /*# sourceMappingURL=sidebar_footer_main_frame.css.map */

@@ -116,7 +116,21 @@ a p {
 @media (min-width: 769px) and (max-width: 916px) {
 
  .sidebar {
-  width: 23vw;  // was 260px
+  width: 20vw;  // was 260px
+ }
+
+ .sidebar::after {
+  z-index: 1;
+  content: ""; // ::before and ::after both require content
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19vw; // was 100%; match .sidebar width; was 260px
+  height: 132vh; //.sidebar height minus footer // was 110vh
+  background-image: linear-gradient(180deg, $orangeLight, $yellow);
+  opacity: .7;
+  box-shadow: 14px -16px 25px $orangeLighter;
+  
  }
 
 
