@@ -68,4 +68,10 @@ a p {
 .am-menu-items:hover {
   background-color: pink;
 }
+
+@media (min-width: 769px) and (max-width: 916px) {
+  .sidebar {
+    width: 23vw;
+  }
+}
 /*# sourceMappingURL=sidebar_footer_main_frame.css.map */

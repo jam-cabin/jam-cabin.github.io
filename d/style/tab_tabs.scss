@@ -83,9 +83,10 @@ body{
  
  align-content: center;
  background-color: $yellowLightT30 ;
+ margin-left: 10vw;
  padding: 10px;
  width: 100vw;
- max-width: 568px;
+ max-width: 668px;
  min-width: 300px;
  height: 75vh; /* adjust to fit more list items */
 }
@@ -93,7 +94,7 @@ body{
 .tabs_disclosure, .tab_banner{
  background-color: $yellowLightT30;
 
- width: 65vw;
+ width: 60vw;
  min-height: 100px;
 }
 
@@ -182,6 +183,42 @@ ul, .banner-p {
 
 }
 
+@media (min-width: 769px) and (max-width: 916px) {
+ 
+.tabs_box, .tab_box {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
+ align-content: center;
+ background-color: $yellowLightT30 ;
+ margin-left: 1vw;
+ padding: 2px;
+ width: 100vw;
+ max-width: 668px;
+ min-width: 300px;
+ height: 75vh; /* adjust to fit more list items */
+}
+
+.tabs_disclosure, .tab_banner{
+ width: 55vw;
+ min-height: 100px;
+}
+
+.tab_box {
+ height: calc(35vw * 2);
+ width: 600px;
+}
+
+.tab_doc {
+ background-color: $blueT50;
+ width: 65vw;
+ height: calc(55vw * 1.5);
+}
+
+}
+
 
 
 @media (min-width: 1100px){
@@ -204,4 +241,4 @@ ul, .banner-p {
   height: 900px !important;
  }
 }
-*
+*/

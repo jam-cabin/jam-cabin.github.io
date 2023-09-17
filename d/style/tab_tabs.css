@@ -71,9 +71,10 @@ body{
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #f6ecc646;
+  margin-left: 10vw;
   padding: 10px;
   width: 100vw;
-  max-width: 568px;
+  max-width: 668px;
   min-width: 300px;
   height: 75vh;
   /* adjust to fit more list items */
@@ -81,7 +82,7 @@ body{
 
 .tabs_disclosure, .tab_banner {
   background-color: #f6ecc646;
-  width: 65vw;
+  width: 60vw;
   min-height: 100px;
 }
 
@@ -176,6 +177,47 @@ ul.pdf, .banner-p.pdf {
   /* fix */
 }
 
+@media (min-width: 769px) and (max-width: 916px) {
+  .tabs_box, .tab_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-color: #f6ecc646;
+    margin-left: 1vw;
+    padding: 2px;
+    width: 100vw;
+    max-width: 668px;
+    min-width: 300px;
+    height: 75vh;
+    /* adjust to fit more list items */
+  }
+  .tabs_disclosure, .tab_banner {
+    width: 55vw;
+    min-height: 100px;
+  }
+  .tab_box {
+    height: calc(35vw * 2);
+    width: 600px;
+  }
+  .tab_doc {
+    background-color: #04909377;
+    width: 65vw;
+    height: calc(55vw * 1.5);
+  }
+}
+
 @media (min-width: 1100px) {
   .tab_box {
     height: calc(35vw * 2);
@@ -188,9 +230,11 @@ ul.pdf, .banner-p.pdf {
   }
 }
 
+/*
 @media (min-height: 700px) {
-  .sidebar::after {
-    height: 900px !important;
-  }
+ .sidebar::after {
+  height: 900px !important;
+ }
 }
+*/
 /*# sourceMappingURL=tab_tabs.css.map */
