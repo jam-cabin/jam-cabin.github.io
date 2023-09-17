@@ -12,7 +12,7 @@ body {
   width: 16vw;
   height: 98vh;
   z-index: 100;
-  background-image: url("/assets/temp/pokadots.png");
+  background-image: url("/assets/temp/david_pokadots_62.png");
   background-size: cover;
   background-color: #ff640c;
   /*
@@ -40,6 +40,9 @@ body {
   opacity: .7;
   -webkit-box-shadow: 14px -16px 25px #f9b58e;
           box-shadow: 14px -16px 25px #f9b58e;
+  min-height: 101vh;
+  max-height: 300vh;
+  height: auto;
 }
 
 @media (max-width: 768px) {

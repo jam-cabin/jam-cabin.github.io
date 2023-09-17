@@ -1,4 +1,26 @@
 
+
+$blue: #049093;
+$blueT50: #04909377;
+$blueLight: #83cbcc;
+$blueDark: #025e5f;
+$orange: #ff640c;
+$orangeLight: #fb965c;
+$orangeLighter: #f9b58e;
+$orangeDark: #b94909;
+$yellow: #faf3a7;
+$yellowLight: #f6ecc6;
+$yellowLightT30: #f6ecc646;
+$yellowLightT80: #f6ecc6bd;
+$yellowDark: #ccbf90;
+$fontWhite: white;
+
+
+
+
+
+
+
 .sidebar {
  /* This was taken from MRDADOU/style/style2.scss */
  display: flex;
@@ -9,7 +31,7 @@
     // adjust for page length, was removed so footer would stop cutting off the accessibility menu when the vsidebar is ver. for desktop mode.
 
  z-index: 100;
- background-image: url("/assets/bg/david_pokadots_2.png");
+ background-image: url("/assets/bg/david_pokadots_62.png");
  background-size: 115px;
 
  /* Should I make a hor and a vert version of pokadots ? 
@@ -22,6 +44,9 @@
 
  &.sidebar::after {
   width: 16vw;
+  min-height: 101vh;
+  max-height: 300vh;
+  height: max-content;
 }}
 
 /* Mr D4d0u ( class .fs-4 ) is edited in the style2.scss file. The font is set by the .smokum class tag within that stylesheet*/
@@ -29,6 +54,8 @@
 .smokum {
  margin-top: 19px;
  margin-left: 5px;
+
+ color: $orangeDark;
 }
 
 #nav_img {

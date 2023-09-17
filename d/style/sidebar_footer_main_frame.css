@@ -9,7 +9,7 @@
   width: 17vw;
   height: auto;
   z-index: 100;
-  background-image: url("/assets/bg/david_pokadots_2.png");
+  background-image: url("/assets/bg/david_pokadots_62.png");
   background-size: 115px;
   /* Should I make a hor and a vert version of pokadots ? 
  background-size: cover;
@@ -22,12 +22,18 @@
 
 .sidebar.sidebar::after {
   width: 16vw;
+  min-height: 101vh;
+  max-height: 300vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 /* Mr D4d0u ( class .fs-4 ) is edited in the style2.scss file. The font is set by the .smokum class tag within that stylesheet*/
 .smokum {
   margin-top: 19px;
   margin-left: 5px;
+  color: #b94909;
 }
 
 #nav_img {

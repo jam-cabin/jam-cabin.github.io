@@ -60,6 +60,10 @@ body {
  background-image: linear-gradient(180deg, $orangeLight, $yellow);
  opacity: .7;
  box-shadow: 14px -16px 25px $orangeLighter;
+ 
+ min-height: 101vh;
+ max-height: 300vh;
+ height: auto;
 }
 
 @media (max-width: 768px) {
