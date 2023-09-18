@@ -1,5 +1,8 @@
 .both_sides {
-  background-image: url("https://jam-cabin.github.io/assets/bg/david_stage_0740.png");
+  background-image: url("https://jam-cabin.github.io/assets/bg/david_stage_0740md.png");
+  /*
+ Have it swap png's based on screen sizes and whether or not a mobile.
+ */
   background-size: cover;
 }
 
@@ -19,7 +22,7 @@ decided to go a different route. Remember to remove the div from the html too.
 */
 .contact_right {
   color: #025e5f00;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 /*
@@ -131,4 +134,87 @@ ul {
 
 
 */
+/*
+Media queries to change background based on which bootstrap sizes the screen/viewport is. .Both_sides class is used to signify the big area of the screen excluding the sidebar in desktop mode, but is everything underneath the sidebar (header banner) of mobile sites.
+*/
+@media (max-width: 576px) {
+  .both_sides {
+    background-image: url("/assets/bg/david_stage_lines.png");
+  }
+  .far_right_side {
+    color: #025e5f00;
+    height: 1px;
+    width: 1px;
+  }
+}
+
+@media (min-width: 576px) {
+  .both_sides {
+    background-image: url("/assets/bg/david_stage_lines.png");
+  }
+  .far_right_side {
+    color: #025e5f00;
+    height: 1px;
+    width: 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .both_sides {
+    content: "";
+    background-image: url("/assets/bg/david_stage_0740sm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .far_right_side {
+    color: #025e5f00;
+    height: 1px;
+    width: 1px;
+  }
+}
+
+@media (min-width: 792px) {
+  .both_sides {
+    content: "";
+    background-image: url("/assets/bg/david_stage_0740md.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .far_right_side {
+    color: #025e5f00;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .both_sides {
+    background-image: none;
+  }
+  .far_right_side {
+    content: "";
+    background-image: url("/assets/bg/david_stage_0740md.png");
+    background-color: #83cbcc89;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: green;
+    font-weight: bolder;
+  }
+}
+
+@media (min-width: 1400px) {
+  .both_sides {
+    background-image: none;
+  }
+  .far_right_side {
+    content: "";
+    background-image: url("/assets/bg/david_stage_0740md.png");
+    background-color: #f9b58e79;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -5px;
+    color: #cc4e63;
+    font-weight: bolder;
+  }
+}
 /*# sourceMappingURL=contact.css.map */
