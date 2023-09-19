@@ -196,7 +196,7 @@ Media queries to change background based on which bootstrap sizes the screen/vie
  }
 }
 
-@media (min-width:792px) { //lg, large screen
+@media (min-width:992px) { //lg, large screen
  .both_sides{
   content: "";
   background-image: url("/assets/bg/david_stage_0740md.png");
@@ -207,6 +207,7 @@ Media queries to change background based on which bootstrap sizes the screen/vie
  .far_right_side {
   color: #025e5f00;
   height: auto; width: auto;
+  z-index: -5;
  }
 }
 
@@ -224,6 +225,7 @@ Media queries to change background based on which bootstrap sizes the screen/vie
   background-repeat: no-repeat;
   color: green;
   font-weight: bolder;
+  z-index: -5;
  }}
 
 @media (min-width:1400px) { //xxlg, xxlarge screen
