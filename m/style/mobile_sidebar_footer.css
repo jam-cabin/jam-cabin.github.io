@@ -1,4 +1,12 @@
 /* This version of the site is only for sites under 768px.*/
+#nav_img {
+  border-radius: 50%;
+  width: 190px;
+  background-image: url("/assets/logos/david_logo_fancy_sepia_blank_1.png");
+  scale: 210%;
+  margin-top: 18px;
+}
+
 @media (max-width: 768px) {
   .sidebar {
     display: -webkit-box;
@@ -22,7 +30,7 @@
 
 
    width: 600px;  needs to be smaller for vertical mobile phones*/
-    background-image: url("/assets/bg/david_pokadots_2.png");
+    background-image: url("/assets/bg/david_pokadots_31.png");
     /* Probably needs resizing to look better */
     background-repeat: repeat;
     background-position: 12vw;
@@ -30,7 +38,7 @@
     background-color: #f6ecc6;
   }
   #nav_img {
-    width: 20px;
+    width: 80px;
   }
   .fs-4 {
     font-size: calc(1.0rem + .2vw) !important;
