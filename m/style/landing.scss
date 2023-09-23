@@ -15,6 +15,13 @@ $yellowDark: #ccbf90;
 $fontWhite: white;
 
 
+
+/*
+You still need to:
+- fix the footer to be not covered by .mama-stripe-middle 's background ... maybe?
+*/
+
+
 html {
  max-height: 100vh;
  max-width: 100vw;
@@ -52,7 +59,7 @@ main {
 
  .mama-stripe-middle {
   background-image: url("../../assets/bg/mobile/oranges_2.png");
-  background-size: 100vw;
+  background-size: 550px; // was 100vw, but that was just insane. It was just David's Homer face .I think i should move this to the media queries. Tomorrow morning Theresa, what do you think?
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
