@@ -59,7 +59,10 @@ main {
 
  .mama-stripe-middle {
   background-image: url("../../assets/bg/mobile/oranges_2.png");
-  background-size: 350px; // was 100vw then 550, but that was just insane. It was just David's Homer face .I think i should move this to the media queries. Tomorrow morning Theresa, what do you think?
+  
+  // was 100vw then 550, but that was just insane. It was just David's Homer face .I think i should move this to the media queries. Tomorrow morning Theresa, what do you think?
+  //background-size: 350px;
+  // yeah, move this sizing to the media queries. The current one works for the 380 screen size
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -102,6 +105,8 @@ main {
 
 
  @media (max-width:576px) { //xsm, xsmall screen
+  .mama-stripe-middle {
+   background-size: 100vw;}
   .stripe {
    padding-bottom: 18vh;
    min-width: 72px;
@@ -110,6 +115,8 @@ main {
   }}
  
  @media (min-width:576px) { //sm, small screen
+  .mama-stripe-middle {
+   background-size: 476px;}
   .stripe {
    //good
    padding-bottom: 16vh;
@@ -119,6 +126,8 @@ main {
   }}
  
  @media (min-width:768px) { //md, medium screen
+  .mama-stripe-middle {
+   background-size: 474px;}
   .stripe{
    //good
    padding-bottom: 17vh;
@@ -131,9 +140,9 @@ main {
   .stripe{
    //good
    padding-bottom: 16vh;
-   min-width: 103px;
-   width: 103px;
-   max-width: 103px;
+   min-width: 101px;
+   width: 101px;
+   max-width: 101px;
   }}
  
  @media (min-width:1200px) { //xlg, xlarge screen

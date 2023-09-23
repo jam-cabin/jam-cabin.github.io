@@ -34,7 +34,6 @@ main {
  */
 .mama-stripe-middle {
   background-image: url("../../assets/bg/mobile/oranges_2.png");
-  background-size: 350px;
   background-position: center;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -85,6 +84,9 @@ main {
 }
 
 @media (max-width: 576px) {
+  .mama-stripe-middle {
+    background-size: 100vw;
+  }
   .stripe {
     padding-bottom: 18vh;
     min-width: 72px;
@@ -94,6 +96,9 @@ main {
 }
 
 @media (min-width: 576px) {
+  .mama-stripe-middle {
+    background-size: 476px;
+  }
   .stripe {
     padding-bottom: 16vh;
     min-width: 73px;
@@ -103,6 +108,9 @@ main {
 }
 
 @media (min-width: 768px) {
+  .mama-stripe-middle {
+    background-size: 474px;
+  }
   .stripe {
     padding-bottom: 17vh;
     min-width: 96px;
@@ -114,9 +122,9 @@ main {
 @media (min-width: 992px) {
   .stripe {
     padding-bottom: 16vh;
-    min-width: 103px;
-    width: 103px;
-    max-width: 103px;
+    min-width: 101px;
+    width: 101px;
+    max-width: 101px;
   }
 }
 
