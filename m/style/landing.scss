@@ -18,24 +18,43 @@ $fontWhite: white;
 html {
  max-height: 100vh;
  max-width: 100vw;
-
+ 
 }
 
 main {
+ z-index: 1;
  max-height: 100vh;
  height: 92vh;
  max-width: 100vw;
 
-  background-image: url("../../assets/bg/mobile/oranges_2.png");
-  background-repeat: no-repeat;
+  background-image: url("../../assets/bg/mobile/oranges_stripes.png");
+  background-repeat: repeat-y;
   background-size: contain;
   background-position: center;
   
   background-color: $orangeLighter;
+  
  }
+/*
+ main::before {
+  content: "";
+ background-image: url("../../assets/bg/david_pokadots_62.png");
+ background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+  width: 101vw;
+  height: 101vh;
+  background-color: pink;
 
+ }
+ */
+ 
 
  .mama-stripe-middle {
+  background-image: url("../../assets/bg/mobile/oranges_2.png");
+  background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
  }
