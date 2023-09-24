@@ -154,9 +154,14 @@ main {
   }}
  
  @media (min-width:1400px) { //xxlg, xxlarge screen
+  .mama-stripe-middle {
+   background-size: auto;
+  }
+
   .stripe{
    padding-bottom: 16vh;
    min-width: 105px;
    width: 105px;
-   max-width: 105px;
+   scale: 1.01;
+   max-width: 905px;
   }}
