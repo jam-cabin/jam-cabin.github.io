@@ -46,13 +46,33 @@ main {
 
 .no-hover {
   width: auto;
-  max-width: 900px;
 }
 
 @media (max-width: 75px) {
   .no-hover {
     background-color: red;
   }
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nav-link i {
+  color: #049093;
+  font-size: large;
+  color: #025e5f;
+  background-color: #f9c677;
+  padding: 6px;
+  border-radius: 45%;
 }
 
 .stripe {
@@ -79,8 +99,9 @@ main {
 }
 
 .stripe:hover i {
-  font-weight: 600;
+  font-weight: 700;
   font-size: xx-large;
+  color: #ff640c;
 }
 
 @media (max-width: 576px) {
@@ -92,6 +113,12 @@ main {
     min-width: 72px;
     width: 72px;
     max-width: 72px;
+  }
+  .nav-link {
+    width: 72px;
+  }
+  .nav-link i {
+    font-size: x-large;
   }
 }
 
@@ -105,6 +132,9 @@ main {
     width: 73px;
     max-width: 73px;
   }
+  .nav-link i {
+    font-size: x-large;
+  }
 }
 
 @media (min-width: 768px) {
@@ -117,6 +147,9 @@ main {
     width: 96px;
     max-width: 96px;
   }
+  .nav-link i {
+    font-size: x-large;
+  }
 }
 
 @media (min-width: 992px) {
@@ -125,6 +158,9 @@ main {
     min-width: 101px;
     width: 101px;
     max-width: 101px;
+  }
+  .nav-link i {
+    font-size: xx-large;
   }
 }
 
@@ -135,14 +171,24 @@ main {
     width: 105px;
     max-width: 105px;
   }
+  .nav-link {
+    min-width: 105px;
+    width: 105px;
+    max-width: 105px;
+    height: 100%;
+  }
 }
 
 @media (min-width: 1400px) {
+  .mama-stripe-middle {
+    background-size: auto;
+  }
   .stripe {
     padding-bottom: 16vh;
     min-width: 105px;
     width: 105px;
-    max-width: 105px;
+    scale: 1.01;
+    max-width: 905px;
   }
 }
 /*# sourceMappingURL=landing.css.map */

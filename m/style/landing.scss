@@ -8,6 +8,7 @@ $orangeLight: #fb965c;
 $orangeLighter: #f9b58e;
 $orangeDark: #b94909;
 $yellow: #faf3a7;
+$yellower: #f9c677;
 $yellowLight: #f6ecc6;
 $yellowLightT30: #f6ecc646;
 $yellowLightT80: #f6ecc6bd;
@@ -71,11 +72,28 @@ main {
 
  .no-hover {
   width: auto;
-  max-width: 900px;
 
   @media (max-width:75px) {
    background-color: red;
   }
+ }
+
+
+ .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  i {
+ color: $blue;
+ font-size: large;
+  //blue isn't visible enough.
+  color: $blueDark;
+  background-color: $yellower;
+  padding: 6px;
+  border-radius: 45%;
+ }
+
  }
 
  .stripe {
@@ -96,8 +114,9 @@ main {
   &:hover {
    background-color: $blueT50;
    i{
-    font-weight: 600;
+    font-weight: 700;
     font-size: xx-large;
+    color: $orange;
    }
   }
  }
@@ -112,7 +131,16 @@ main {
    min-width: 72px;
    width: 72px;
    max-width: 72px;
-  }}
+  }
+  .nav-link {
+   width: 72px;
+
+   i{
+    font-size: x-large;
+   }
+  }
+ 
+ }
  
  @media (min-width:576px) { //sm, small screen
   .mama-stripe-middle {
@@ -123,7 +151,12 @@ main {
    min-width: 73px;
    width: 73px;
    max-width: 73px;
-  }}
+  }
+  .nav-link{
+   i{
+    font-size: x-large;
+   }}
+ }
  
  @media (min-width:768px) { //md, medium screen
   .mama-stripe-middle {
@@ -134,7 +167,12 @@ main {
    min-width: 96px;
    width: 96px;
    max-width: 96px;
-  }}
+  }
+  .nav-link{
+   i{
+    font-size: x-large;
+   }}
+ }
  
  @media (min-width:992px) { //lg, large screen
   .stripe{
@@ -143,7 +181,11 @@ main {
    min-width: 101px;
    width: 101px;
    max-width: 101px;
-  }}
+  }
+  .nav-link{
+   i{
+    font-size: xx-large;
+   }}}
  
  @media (min-width:1200px) { //xlg, xlarge screen
   .stripe{
@@ -151,7 +193,15 @@ main {
    min-width: 105px;
    width: 105px;
    max-width: 105px;
-  }}
+  }
+  .nav-link {
+   min-width: 105px;
+   width: 105px;
+   max-width: 105px;
+   height: 100%;
+  }
+ 
+ }
  
  @media (min-width:1400px) { //xxlg, xxlarge screen
   .mama-stripe-middle {
@@ -165,3 +215,8 @@ main {
    scale: 1.01;
    max-width: 905px;
   }}
+
+
+
+  
+ 
