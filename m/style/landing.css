@@ -114,6 +114,9 @@ main {
     width: 72px;
     max-width: 72px;
   }
+  .stripe:hover {
+    background-color: rgba(255, 192, 203, 0);
+  }
   .nav-link {
     width: 72px;
   }
@@ -131,6 +134,9 @@ main {
     min-width: 73px;
     width: 73px;
     max-width: 73px;
+  }
+  .stripe:hover {
+    background-color: #04909377;
   }
   .nav-link i {
     font-size: x-large;

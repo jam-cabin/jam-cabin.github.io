@@ -122,8 +122,8 @@ main {
  }
 
 
-
  @media (max-width:576px) { //xsm, xsmall screen
+
   .mama-stripe-middle {
    background-size: 100vw;}
   .stripe {
@@ -131,6 +131,9 @@ main {
    min-width: 72px;
    width: 72px;
    max-width: 72px;
+   &:hover {
+    background-color: rgba(255, 192, 203, 0);
+   }
   }
   .nav-link {
    width: 72px;
@@ -151,6 +154,9 @@ main {
    min-width: 73px;
    width: 73px;
    max-width: 73px;
+   &:hover {
+    background-color: $blueT50;
+   }
   }
   .nav-link{
    i{
