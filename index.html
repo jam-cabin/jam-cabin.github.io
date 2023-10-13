@@ -78,16 +78,18 @@
 
  </div>
 
-<!--
+<!-- This JS tests whether the screen is best for mobile or desktop version. I will eventually get around to switching this all to an HTTP redirect, but not yet. -->
  <script type="text/javascript">
-  if (screen.width <= 699) { //mobile  version
-    document.location = "https://jam-cabin.github.io/m/tabs.html";
-  if (screen.width >= 699) { // desktop version
-    document.location = "https://jam-cabin.github.io/d/tabs.html";
-  }
+  if (screen.width <= 699) { //mobile  version document.location
+    window.location.href = 'https://jam-cabin.github.io/m/tabs.html';
+   }
+  else if (screen.width >= 699) { // desktop version
+    window.location.href = 'https://jam-cabin.github.io/d/tabs.html';
+  } else {
+   window.alert('Redirect terminated. Please select your screen in the form below.')
   }
 </script>
--->
+
  
 
 
