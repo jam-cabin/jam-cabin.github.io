@@ -81,6 +81,8 @@
 <!-- This JS tests whether the screen is best for mobile or desktop version. I will eventually get around to switching this all to an HTTP redirect, but not yet. -->
  <script type="text/javascript">
 
+  //The mobile site looks messed up on my phone's edge browser. Namely, the accessibility menu is a problem. Ask if it can just be icons for the links, or add them to the menu under a burger icon. I don't think we should mess with the already made "skinny mode", but to make an even skinnier mode for mobiles in vertical mode. Then for the JS i'll have to make a search query for even smaller than 768px widths.
+
   const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
 
   if (screen.width <= 768 || isMobile) { //mobile  version document.location no need for .href ?  was 699
