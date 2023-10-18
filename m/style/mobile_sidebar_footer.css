@@ -1,5 +1,11 @@
 /* This version of the site is only for sites under 768px.*/
 /* This site version, the mobile one, is going to be replaced to look more like an APP.  */
+/*
+ Screw it, I'm fine with the accessibility menu having its caret for now.
+ .dropdown::after {
+  color: greenyellow;
+ }
+*/
 #nav_img {
   border-radius: 50%;
   width: 190px;
